@@ -5,6 +5,7 @@
     <title>Radio Stuff</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="topnav">
@@ -13,9 +14,11 @@
         <a class="active" href="#radio">Radio Stuff</a>
     </div>
     <h1>QRZ Logbook</h1>
-    <iframe align="middle" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/KE2FCA/" width="40%" style="display: block; margin: auto;"></iframe>
-    <p>
-        
-    </p>
+    <div class="iframe-container">
+      <div class="loader" id="iframe-loader">
+        <img src="images/loading.png" alt="Loading..." style="width:200px;height:200px;animation:spin 1s linear infinite;">
+      </div>
+      <iframe id="qrz-iframe" align="middle" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/KE2FCA/" width="40%" style="display: block; margin: auto;"></iframe>
+    </div>
   </body>
 </html>
