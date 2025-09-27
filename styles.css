@@ -65,6 +65,12 @@ h1 {
   visibility: hidden; /* Hide iframe initially */
 }
 
+.loading-spinner {
+    width: 150px;
+    height: 150px;
+    animation: spin 1s linear infinite;
+}
+
 @keyframes spin {
         100% { transform: rotate(360deg); }
       }
